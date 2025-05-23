@@ -1,0 +1,20 @@
+build-essential       # gcc, g++ etc.
+cmake                  # build system
+git                    # source control
+libopencv-dev          # OpenCV C++ headers & libs
+libopencv-core-dev
+libopencv-highgui-dev
+libopencv-imgproc-dev
+libopencv-imgcodecs-dev
+libprotobuf-dev        # Protobuf headers
+protobuf-compiler      # protoc
+libvulkan1             # Vulkan runtime
+libvulkan-dev          # Vulkan headers
+vulkan-utils           # validation layers, tools
+libopenblas-dev        # BLAS for NCNN
+libgomp1               # OpenMP runtime
+python3-opencv         # Python cv2 binding
+python3-pip            # pip for Python3
+python3-venv           # virtualenv support
+curl                   # for downloads
+git-lfs                # for large model files (if you use LFS)
