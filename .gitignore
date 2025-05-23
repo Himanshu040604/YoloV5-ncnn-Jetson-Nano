@@ -1,0 +1,14 @@
+# build artifacts
+build/
+*.o
+*.so
+
+# Python/venv
+onnx_env/
+__pycache__/
+
+# Exporter scripts
+yolov5_export/
+
+# Jetson stats, logs, etc.
+*.log
