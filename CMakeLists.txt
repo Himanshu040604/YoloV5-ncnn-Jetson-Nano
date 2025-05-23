@@ -22,7 +22,7 @@ include_directories(
   /usr/local/include/ncnn
 )
 
-# Where to find NCNN lib
+# Where you will find NCNN lib
 link_directories(/usr/local/lib)
 
 # Build the executable
