@@ -42,6 +42,12 @@ YoloV5-ncnn-Jetson-Nano/
      libvulkan1 libvulkan-dev vulkan-utils \
      libopenblas-dev libgomp1
    ```
+   2.1. **Install system dependencies via file**  
+
+   ```text
+   sudo apt-get update
+   sudo apt-get install -y $(cat system_requirements.txt)
+   ```
 
 3. **Build NCNN** (if not already installed)
 
