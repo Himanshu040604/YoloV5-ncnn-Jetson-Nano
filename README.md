@@ -27,7 +27,7 @@ YoloV5-ncnn-Jetson-Nano/
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/<youruser>/YoloV5-ncnn-Jetson-Nano.git
+   git clone https://github.com/Himanshu040604/YoloV5-ncnn-Jetson-Nano.git
    cd YoloV5-ncnn-Jetson-Nano
    ```
 
@@ -46,7 +46,7 @@ YoloV5-ncnn-Jetson-Nano/
 3. **Build NCNN** (if not already installed)
 
    ```bash
-   # Assume NCNN sources in ~/ncnn
+ 
    cd ~/ncnn
    mkdir -p build && cd build
    cmake -DNCNN_VULKAN=OFF -DNCNN_OPENMP=ON -DCMAKE_INSTALL_PREFIX=/usr/local ..
@@ -95,9 +95,9 @@ YoloV5-ncnn-Jetson-Nano/
 * **Vulkan vs. CPU**: toggle GPU inference in code:
 
   ```cpp
-  yolov5.opt.use_vulkan_compute = true;   // GPU
-  yolov5.opt.use_vulkan_compute = false;  // CPU
-  yolov5.opt.num_threads = 4;             // CPU threads
+  yolov5.opt.use_vulkan_compute = true;   
+  yolov5.opt.use_vulkan_compute = false; 
+  yolov5.opt.num_threads = 4;            
   ```
 * **Precision**: enable FP16 on NCNN (if supported) or build a TensorRT FP16 engine for >2× speedup.
 * **Power Mode**: maximize Jetson Nano clocks:
